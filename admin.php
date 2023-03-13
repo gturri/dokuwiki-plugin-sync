@@ -561,7 +561,7 @@ class admin_plugin_sync extends DokuWiki_Admin_Plugin {
                 } else if(!array_key_exists('local', $item)){
                     $dir = -1;
                 } else if($item['remote']['mtime'] > $rtime &&
-                    $item['local']['mtime'] <= $letime){
+                    $item['local']['mtime'] <= $ltime){
                 $dir = -1;
                 } else if ($item['remote']['mtime'] <= $rtime &&
                     $item['local']['mtime'] > $ltime){
